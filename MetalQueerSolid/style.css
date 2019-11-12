@@ -1,6 +1,16 @@
 body{
 
   background-color: black;
-  color: green;
+  width: 50%;
+  color: #20C20E;
   font-family: 'VT323', monospace;
+  font-size: 20;
+  margin: auto;
+
+}
+
+.textBox{
+  border: 3px solid #20C20E;
+  padding: 100px;
+
 }
