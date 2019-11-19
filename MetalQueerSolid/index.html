@@ -4,19 +4,26 @@
     <link rel = "stylesheet" href="style.css"> </link>
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <script src = "js/DialogueOptions.js"> </script>
+    <script src = "js/libraries/typed.min.js"> </script>
     <script src = "js/script.js"> </script>
   </head>
 
   <body>
+    <div class = "profilePicture1"> ye <img src = "assets/images/redrectangle.png" alt = "red profile box"/>
+     </div>
+
     <div class = "textBox">
-      <p id  = "changeText"> text box area here
+      <img src = "assets/images/greenbox.png" alt = "dialogue box" width = "300px"/>
+      <div id  = "changeText" class= "centerTextBox"> text box area here
         <br>
-      </p>
+      </div>
     </div>
 
-    <div onclick="choseLink()"> <p id = "updateFirstLink"> First Link </p> </div>
-    <div onclick="choseLink()"> <p id = "updateSecondLink"> Second Link  </p> </div>
+    <div onclick="choseLink()"> <p id = "updateFirstLink" onmouseover = "style.color='red'" onmouseout = "style.color='#20C20E'"> First Link </p> </div>
+    <div onclick="choseLink()"> <p id = "updateSecondLink" onmouseover = "style.color='red'" onmouseout = "style.color='#20C20E'"> Second Link  </p> </div>
 
+    <div class = "profilePicture2"> ya <img src = "assets/images/bluerectangle.png" alt = "blue profile box"/>
+    </div>
 
 
 

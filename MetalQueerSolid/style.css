@@ -3,6 +3,7 @@ body{
   background-color: black;
   width: 50%;
   color: #20C20E;
+
   font-family: 'VT323', monospace;
   font-size: 20;
   margin: auto;
@@ -13,4 +14,24 @@ body{
   border: 3px solid #20C20E;
   padding: 100px;
 
+  text-align: center;
+  position: relative;
+}
+
+.centerTextBox{
+  position:absolute;
+  text-align: center;
+}
+
+.profilePicture1{
+
+}
+
+.profilePicture2.img{
+margin: auto;
+}
+
+p {
+  text-shadow: 20px, 20px, 50px, white;
+  //this isn't working
 }
