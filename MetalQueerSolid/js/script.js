@@ -8,10 +8,11 @@ var fifthLinkOption = "this is fifthLink";
 var sixthLinkOption = "this is sixthLink";
 let clicks =0;
 let dialogOptions = [];
+var speed = 40;
 
-dialogOptions.push(new DialogueOptions("test", "Second","Third", "hello"));
-dialogOptions.push(new DialogueOptions("test2", "Second2","Third2", "goodbye"));
-dialogOptions.push(new DialogueOptions("test2", "Second2","Third2", "goodbye again"));
+dialogOptions.push(new DialogueOptions("test", "Second","Third", firstLinkOption));
+dialogOptions.push(new DialogueOptions("test2", "Second2","Third2", secondLinkOption));
+dialogOptions.push(new DialogueOptions("test2", "Second2","Third2", thirdLinkOption));
 
 //var firstlinkDisabled = false;
 // var secondLinkDisabled = false;
@@ -23,4 +24,12 @@ document.getElementById("updateFirstLink").textContent =  dialogOptions[clicks].
 document.getElementById("updateSecondLink").textContent =  dialogOptions[clicks].secondLinkOption;
   clicks++;
 console.log(clicks);
+}
+
+function typeWriter(){
+  if (i=0< firstLinkOption){
+    document.getElementById("changeText").innerHTML += firstLinkOption.charAt(i);
+    i++
+    setTimeout(typeWriter, speed = 40);
+  }
 }
