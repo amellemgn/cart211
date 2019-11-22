@@ -1,34 +1,35 @@
 body{
-
   background-color: black;
-  width: 50%;
   color: #20C20E;
-
   font-family: 'VT323', monospace;
   font-size: 20;
-  margin: auto;
+  width: 50%;
+  margin:auto;
 
+}
+
+center{
+  /* this represents textbox, center textbox, and the two links */
+  width: 40%;
+  margin: auto;
 }
 
 .textBox{
-  border: 3px solid #20C20E;
-  padding: 100px;
+  border: 1px solid #20C20E;
+  padding: 50px;
 
-  text-align: center;
-  position: relative;
 }
 
 .centerTextBox{
-  position:absolute;
-  text-align: center;
 }
 
 .profilePicture1{
-
+margin-right: 200px;
 }
 
 .profilePicture2.img{
-margin: auto;
+  border: 3px solid green;
+  padding: 70px 0;
 }
 
 p {
