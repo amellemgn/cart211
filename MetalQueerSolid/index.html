@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -8,44 +9,12 @@
   <script src="js/DialogueOptions.js"> </script>
   <script src="js/libraries/typed.min.js"> </script>
   <script src="js/script.js"> </script>
+  <link rel = "stylesheet" href="game.html"> </link>
 </head>
 
 <body>
-  <div class="profilePicture1">
-    <img src="assets/images/BigDaddyGif.gif" width = "100px"/>
-    <br>
-    Big Daddy
-  </div>
-  <center>
-  <div class="textBox" onclick = "typeWriter">
-    <img src="assets/images/greenbox.png" alt="dialogue box" width="300px" />
-    <div id="changeText" class="centerTextBox"> text box area here
-      <br>
-    <span id="typed"></span>
-    </div>
-  </div>
-
-  <div onclick="choseLink()">
-    <p id="updateFirstLink" onmouseover="style.color='red'" onmouseout="style.color='#20C20E'"> First Link </p>
-  </div>
-  <div onclick="choseLink()">
-    <p id="updateSecondLink" onmouseover="style.color='red'" onmouseout="style.color='#20C20E'"> Second Link </p>
-  </div>
-</center>
-  <div class="profilePicture2">
-    <img src="assets/images/NakedBearGif.gif" width = "100px"/>
-    <br>
-    Naked Bear
-  </div>
-
-  <script>
-  var options = {
-  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-  typeSpeed: 40
-};
-    var typed = new Typed('#typed', options);
-  </script>
-
+  <img src="assets/images/menu.jpg" width = "300px"/>
+  <a href="game.html" class="button"> PLAY</a>
 </body>
 
 </html>
