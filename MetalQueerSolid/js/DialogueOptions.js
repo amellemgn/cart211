@@ -4,25 +4,10 @@ constructor(linkName, firstLinkOption, secondLinkOption, textBoxText){
   this.firstLinkOption = firstLinkOption;
   this.secondLinkOption = secondLinkOption;
   this.textBoxText = textBoxText;
+
   this.username1 = "Sabine";
   this.username2 = "Amelle";
-
-
-let options = {
-  strings: [this.textBoxText],
-  typeSpeed: 40
-};
-    let typed = new Typed('#typed', options);
+  this.i=0;
+  this.speed =50;
 }
-
-/* mouseover(){
-
-}*/
-
-/*choseLink(){
-  document.getElementById("changeText").textContent = "CHANGED";
-  document.getElementById("updateFirstLink").textContent = this.firstLinkOption;
-  document.getElementById("updateSecondLink").textContent = this.secondLinkOption;
-}*/
-
 }
