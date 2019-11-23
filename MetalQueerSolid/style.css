@@ -1,54 +1,64 @@
-body{
+body {
   background-color: black;
   color: #20C20E;
   font-family: 'VT323', monospace;
   font-size: 20;
   width: 50%;
-  margin:auto;
+  margin: auto;
 }
 
-center{
-  /* this represents textbox, center textbox, and the two links */
+center {
+  /* this represents textbox, first link and second link */
   width: 40%;
   margin: auto;
 }
 
-.textBox{
-  border: 1px solid #20C20E;
-  padding: 50px;
+.textBox {
+  /* this represents the character names, the adaptable text, and the green rounded-corner rectangle */
+  /* border: 1px solid #20C20E; */
+  height: 500px;
+  background: url("assets/images/greenbox.png");
+  background-repeat: no-repeat;
+}
+
+.textBox img{
+  /* green rectangle w rounded edges */
   position: relative;
-
+}
+.textBox span{
+  /* adaptable text*/
+  position: relative;
 }
 
-.insideImageContent{
-  position: abosolute;
-  bottom: 2px;
-}
-
-.profilePicture1 img{
+.profilePicture1 img {
   border-radius: 10%;
-  box-shadow: 0px  /*horiz offset */ 0px /* vert offset */ 10px /*blur*/ 6px  /*spread */ rgba(32, 194, 14, 0.3);
+  box-shadow: 0px
+    /*horiz offset */
+    0px
+    /* vert offset */
+    10px
+    /*blur*/
+    6px
+    /*spread */
+    rgba(32, 194, 14, 0.3);
 
+    margin-top: 40px;
 }
 
-.profilePicture2  img{
-/*  border: 3px solid green;
-  padding: 70px 0;
-  */
-
+.profilePicture2 img {
   border-radius: 10%;
-  box-shadow: 0px  /*horiz offset */ 0px /* vert offset */ 10px /*blur*/ 6px  /*spread */ rgba(32, 194, 14, 0.3);
+  box-shadow: 0px
+    /*horiz offset */
+    0px
+    /* vert offset */
+    10px
+    /*blur*/
+    6px
+    /*spread */
+    rgba(32, 194, 14, 0.3);
 }
 
-p {
-  text-shadow: 20px, 20px, 50px, white;
-  //this isn't working
-}
-img
-{
-}
-
-.button{
+.button {
   font: bold 24px Arial;
   background-color: #EEEEEE;
   color: #333333;
