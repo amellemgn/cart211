@@ -4,6 +4,15 @@ constructor(linkName, firstLinkOption, secondLinkOption, textBoxText){
   this.firstLinkOption = firstLinkOption;
   this.secondLinkOption = secondLinkOption;
   this.textBoxText = textBoxText;
+  this.username1 = "Sabine";
+  this.username2 = "Amelle";
+
+
+let options = {
+  strings: [this.textBoxText],
+  typeSpeed: 40
+};
+    let typed = new Typed('#typed', options);
 }
 
 /* mouseover(){

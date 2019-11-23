@@ -5,9 +5,7 @@
   <link rel="stylesheet" href="style.css">
   </link>
   <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-  <script src="js/DialogueOptions.js"> </script>
-  <script src="js/libraries/typed.min.js"> </script>
-  <script src="js/script.js"> </script>
+
 </head>
 
 <body>
@@ -17,12 +15,16 @@
     Big Daddy
   </div>
   <center>
-  <div class="textBox" onclick = "typeWriter">
+  <div class="textBox">
     <img src="assets/images/greenbox.png" alt="dialogue box" width="300px" />
-    <div id="changeText" class="centerTextBox"> text box area here
-      <br>
+    <div id = "insideImageContent">
+    <div id = "userPara1"> 1st user </div>
+    <div id="changeText" class="centerTextBox"> here
+    <br>
     <span id="typed"></span>
     </div>
+    <div id = "userPara2"> 2nd user </div>
+  </div>
   </div>
 
   <div onclick="choseLink()">
@@ -38,14 +40,9 @@
     Naked Bear
   </div>
 
-  <script>
-  var options = {
-  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-  typeSpeed: 40
-};
-    var typed = new Typed('#typed', options);
-  </script>
-
+  <script src="js/DialogueOptions.js"> </script>
+  <script src="js/libraries/typed.min.js"> </script>
+  <script src="js/script.js"> </script>
 </body>
 
 </html>

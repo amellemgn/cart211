@@ -18,18 +18,11 @@ dialogOptions.push(new DialogueOptions("test2", "Second2","Third2", thirdLinkOpt
 // var secondLinkDisabled = false;
 
 function choseLink(){
-
+document.getElementById("userPara1").textContent = dialogOptions[clicks].username1;
+document.getElementById("userPara2").textContent = dialogOptions[clicks].username2;
 document.getElementById("changeText").textContent = dialogOptions[clicks].textBoxText;
 document.getElementById("updateFirstLink").textContent =  dialogOptions[clicks].firstLinkOption;
 document.getElementById("updateSecondLink").textContent =  dialogOptions[clicks].secondLinkOption;
   clicks++;
 console.log(clicks);
-}
-
-function typeWriter(){
-  if (i=0< firstLinkOption){
-    document.getElementById("changeText").innerHTML += firstLinkOption.charAt(i);
-    i++
-    setTimeout(typeWriter, speed = 40);
-  }
 }
