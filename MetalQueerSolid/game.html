@@ -6,22 +6,22 @@
    </link>
    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
    <link rel "stylesheet" href="endscreen.html">
-   </link>
+   <link rel "stylesheet" href="inventory.html">
+</link>
  </head>
 
  <body>
 
    <audio src="assets/sounds/backgroundmusic.mp3" loop="true" autoplay="true"></audio>
-
+   <audio id="alert" src="assets/sounds/alert.mp3" loop="false" autoplay="false"></audio>
+<center>
    <div class="profilePicture1">
-     <img src="assets/images/BigDaddyGif.gif" width="100px" />
+     <img id="profilePicture1" src="assets/images/BigDaddyGif.gif" width="100px" />
      <br>
      Big Daddy
    </div>
 
-   <center>
-     <div class="textBox">
-       <!-- <img src="assets/images/greenbox.png" alt="dialogue box" width="300px" /> -->
+     <div id="textingBox" class="textBox">
        <div id="userPara1"> BIG DADDY </div>
        <br>
        <div id=userPara2> NAKED BEAR </div>
@@ -31,17 +31,18 @@
      <div onclick="choseLink()">
        <p id="updateFirstLink" onmouseover="style.color='red'" onmouseout="style.color='#20C20E'"> First Link </p>
      </div>
-     <div>
+     <div onclick="choseLink()">
        <p id="updateSecondLink" onmouseover="style.color='red'" onmouseout="style.color='#20C20E'"> Second Link </p>
      </div>
-   </center>
-   <div class="profilePicture2">
+
+   <div class="profilePicture2" align ="right">
      <img src="assets/images/NakedBearGif.gif" width="100px" />
      <br>
      Naked Bear
-   </div>
+     </center>
    <br> <br>
    <a href="endscreen.html" class="button"> END GAME? </a>
+   <a href="endscreen.html" class="button"> INVENTORY? </a>
    <script src="js/DialogueOptions.js"> </script>
    <script src="js/libraries/typed.min.js"> </script>
    <script src="js/script.js"> </script>
