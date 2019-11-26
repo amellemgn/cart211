@@ -1,23 +1,23 @@
 // var pageNumber = 0;
 var blueImage = document.getElementById("blueimage");
 var c;
-var firstLinkOption = "this is firstLink bla bla bla lnwernlernlwnrlnerlewnnlwlrnwr";
-var secondLinkOption = "this is secondLink lenenrlntlneltnelrtnlenrltenltnlnelnelnelnelrnt";
-var thirdLinkOption = "this is thirdLink";
-var fourthLinkOption = "this is fourthLink";
-var fifthLinkOption = "this is fifthLink";
-var sixthLinkOption = "this is sixthLink";
+var firstLinkOption = "this is firstLink this is firstLink ";
+var secondLinkOption = "this is secondLink this is secondLink ";
+var thirdLinkOption = "this is thirdLink this is thirdLink";
+var fourthLinkOption = "this is fourthLink this is fourthLink";
+var fifthLinkOption = "this is fifthLink this is fifthLink";
+var sixthLinkOption = "this is sixthLink this is sixthLink";
 let clicks = 0;
 let dialogOptions = [];
 var speed = 40;
 
 
-dialogOptions.push(new DialogueOptions("test", "Second", "Third", firstLinkOption));
-dialogOptions.push(new DialogueOptions("test2", "Second2", "Third2", secondLinkOption));
-dialogOptions.push(new DialogueOptions("test3", "Second3", "Third3", thirdLinkOption));
-dialogOptions.push(new DialogueOptions("test4", "Second4", "Third4", fourthLinkOption));
-dialogOptions.push(new DialogueOptions("test5", "Second5", "Third5", fifthLinkOption));
-dialogOptions.push(new DialogueOptions("test6", "Second6", "Third6", sixthLinkOption));
+dialogOptions.push(new DialogueOptions("test", "Second", "Third", firstLinkOption, "BIG DADDY", "NAKED BEAR"));
+dialogOptions.push(new DialogueOptions("test2", "Second2", "Third2", secondLinkOption, "NAKED BEAR", "BIG DADDY"));
+dialogOptions.push(new DialogueOptions("test3", "Second3", "Third3", thirdLinkOption, "BIG DADDY", "NAKED BEAR"));
+dialogOptions.push(new DialogueOptions("test4", "Second4", "Third4", fourthLinkOption, "NAKED BEAR", "BIG DADDY"));
+dialogOptions.push(new DialogueOptions("test5", "Second5", "Third5", fifthLinkOption, "BIG DADDY", "NAKED BEAR"));
+dialogOptions.push(new DialogueOptions("test6", "Second6", "Third6", sixthLinkOption, "BIG DADDY", "NAKED BEAR"));
 
 
 function choseLink() {
@@ -33,7 +33,7 @@ function choseLink() {
   document.getElementById("updateSecondLink").textContent = dialogOptions[clicks].secondLinkOption;*/
   clicks++;
 
-  console.log("clicks");
+  //console.log("clicks");
 }
 
 function typeWriter(e) {
@@ -48,13 +48,13 @@ function typeWriter(e) {
       e.speed);
   }
 }
-/*  if (e.i < e.textBoxText.length && e.textBoxText === dialogOptions[clicks].secondLinkOption) {
+ if (e.i < e.textBoxText.length && e.textBoxText === dialogOptions[clicks].secondLinkOption) {
     document.getElementById("blueimage").style.display = "inline";
   }
   if (e.i < e.textBoxText.length && e.textBoxText === dialogOptions[clicks].thirdLinkOption || e.textBoxText === dialogOptions[clicks].fifthLinkOption)
     document.getElementbyId("alert").autoplay == "true";
 }
-*/
+
 
 function removeObjects() {
   var myobj = document.getElementById("userPara1");
@@ -66,18 +66,18 @@ function removeObjects() {
 }
 
 function addObjects() {
-  var para = document.createElement("div");                 // Create a <div> element
-  para.textContent = "This is a paragraph.";
-  para.setAttribute("id", "userPara1");              // Insert text
-  document.getElementById("textingBox").appendChild(para);     // Append <div> to <div> with id="myDIV"
+  var para = document.createElement("div");     // Create a <div> element
+  para.textContent = dialogOptions[clicks].username1;
+  para.setAttribute("id", "userPara1");    // Insert text
+  document.getElementById("textingBox").appendChild(para);  // Append <div> to <div> with id="myDIV"
 
   var para1 = document.createElement("div");
-  para1.textContent = "This is a paragraph.";
+  para1.textContent = dialogOptions[clicks].username2;
   para1.setAttribute("id", "userPara2");
   document.getElementById("textingBox").appendChild(para1);
 
   var para2 = document.createElement("div");
-  para2.textContent = "This is a paragraph.";
+  para2.textContent = dialogOptions[clicks].textBoxText;;
   para2.setAttribute("id", "typed");
   document.getElementById("textingBox").appendChild(para2);
 }
